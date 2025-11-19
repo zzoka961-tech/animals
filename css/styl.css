@@ -1,0 +1,33 @@
+.bazina{
+   height: 100vh;
+position: relative;
+  background-image: url("../img/tiger.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+/* اللودر الكبير */
+/* اللودر الكبير */
+.loader {
+  border: 8px solid #f3f3f3; /* لون الخلفية */
+  border-top: 8px solid #3498db; /* لون الدوران */
+  border-radius: 50%;
+  width: 80px;  /* حجم كبير */
+  height: 80px; /* حجم كبير */
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+/* دوران اللودر */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* وضع اللودر في منتصف الشاشة */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ياخد طول الشاشة كله */
+}

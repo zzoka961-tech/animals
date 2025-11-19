@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styl.css">
+
+  <title>Product Management System</title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-md-7 bazina d-flex justify-content-center align-items-center">
+      <div class="text-center">
+        <h1 class="text-white">Discover Animals</h1>
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eos cumque 
+          distinctio eligendi dolorum reiciendis at nostrum neque tempora quia.
+        </p>
+              <div class="form-floating mb-3 d-flex ">
+  <input type="email" class="form-control w-50 " id="input" placeholder="name@example.com">
+  <label  for="input">Email address</label>
+  <button class="btn btn-dark" id="btn">search</button>
+</div>
+      </div>
+
+
+    </div>
+
+    <div class="col-md-5 " id="right">
+      <div class="div ">
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </tbody>
+</table>
+</div>
+ 
+   
+   
+    
+
+
+
+
+
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+          <script src="./js/index.js"></script>
+</body>
+
+
+</html>
+
+
+<!-- 
+function displayprouducts(list) {
+  var cartona = ''
+  for (i = 0; i < list.length; i++) {
+    if (searchInput.value == "") {
+      list[i].newname = null
+    }
+    cartona += `
+      <tr>
+        <th scope="row">${i + 1}</th>
+        <td>
+          <img src="${list[i]?.image ? 'img/' + list[i].image : 'img/not.jpg'}" style="width: 50px" alt="">
+        </td>
+        <td>${list[i]?.newname ? list[i].newname : list[i]?.name}</td>
+        <td>${list[i]?.price}</td>
+        <td>${list[i]?.category}</td>
+        <td>${list[i]?.Description}</td>
+        <td>
+          <button class="btn btn-danger" onclick="deleteprouduct(${list[i].id})"><i class="fa-solid fa-trash"></i> delete</button>
+          <button class="btn btn-success" onclick="fillubdateinput(${i})"><i class="fa-solid fa-pen-to-square"></i> update</button>
+        </td>
+      </tr>
+    `
+  }
+  document.getElementById("010025").innerHTML = cartona
+} -->
