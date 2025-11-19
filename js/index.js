@@ -5,7 +5,7 @@ const searchinput = document.querySelector("input");
 const baseUrl = "https://api.api-ninjas.com/v1/animals";
 const keyUrl = "6WeldMN6/GQLPM6eF3iRGA==JBxwRZdh4ZdFX2gV";
 
-// Fetch بيانات الحيوان
+
 async function fechanimal(name) {
     const response = await fetch(`${baseUrl}?name=${name}`, {
         headers: {
@@ -16,7 +16,7 @@ async function fechanimal(name) {
         console.log(data[0]);
     return data[0];
     
-     // أول عنصر في المصفوفة
+   
 
 }
 
@@ -28,7 +28,7 @@ async function getanimal() {
         return;
     }
 
-    // عرض اللودر الكبير في وسط الشاشة
+
     container.innerHTML = `
         <div class="loader-container">
             <span class="loader"></span>
@@ -39,7 +39,7 @@ async function getanimal() {
     displayAnimal(animaldata);
 }
 
-// عرض الكارد في منتصف الصفحة
+
 function displayAnimal(animal) {
     if (!animal) {
         container.innerHTML = `<h1>No animal found</h1>`;
@@ -78,7 +78,7 @@ function displayAnimal(animal) {
 }
 
 
-// ربط الزرار بدالة البحث
+
 btnsearch.addEventListener("click",function(){
      getanimal()
 });
